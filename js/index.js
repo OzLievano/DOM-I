@@ -61,6 +61,21 @@ button1.textContent = siteContent["cta"]['button'];
 // update the img src for the header 
 const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute('src',siteContent["cta"]["img-src"]);
+
+
+// all updates for the main-content section 
+
+// add headers 
+const header4 = document.getElementsByTagName("h4");
+header4[0].textContent = siteContent["main-content"]["features-h4"];
+header4[1].textContent = siteContent["main-content"]["about-h4"];
+header4[2].textContent = siteContent["main-content"]["services-h4"];
+header4[3].textContent = siteContent["main-content"]["product-h4"];
+header4[4].textContent = siteContent["main-content"]["vision-h4"];
+header4[5].textContent = siteContent["contact"]["contact-h4"];
+
+
+
 //update the img src for the main-content
 const midPage = document.getElementById("middle-img");
 midPage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
