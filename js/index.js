@@ -101,6 +101,11 @@ descriptions[6].textContent = siteContent["contact"]["phone"];
 descriptions[7].textContent = siteContent["contact"]["email"];
 descriptions[8].textContent = siteContent["footer"]["copyright"];
 
+const descriptionStyle = document.querySelectorAll('p')
+descriptionStyle.forEach(element => {
+  element.style.background = "red";
+  element.style.fontStyle = "Sans Serif";
+})
 
 
 //update the img src for the main-content
