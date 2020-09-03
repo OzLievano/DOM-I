@@ -50,6 +50,10 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
  navSec[4].textContent = siteContent["nav"]["nav-item-5"];
  navSec[5].textContent = siteContent["nav"]["nav-item-6"];
 
+ const navSecStyle = document.querySelectorAll('a')
+ navSecStyle.forEach(element => {
+   element.style.color = "green";
+ })
 // all updates for the header
 
 // update the h1 
