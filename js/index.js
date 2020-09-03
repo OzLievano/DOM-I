@@ -50,10 +50,22 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
  navSec[4].textContent = siteContent["nav"]["nav-item-5"];
  navSec[5].textContent = siteContent["nav"]["nav-item-6"];
 
+ // add 2 items to nav
+const careers = document.createElement('a');
+careers.textContent = "Careers";
+careers.setAttribute('href','#');
+document.querySelector('nav').appendChild(careers);
+const events = document.createElement('a');
+events.textContent = "Events";
+events.setAttribute('href','#');
+document.querySelector('nav').appendChild(events);
+ // add style to nav
  const navSecStyle = document.querySelectorAll('a')
  navSecStyle.forEach(element => {
    element.style.color = "green";
  })
+
+
 // all updates for the header
 
 // update the h1 
