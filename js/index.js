@@ -38,11 +38,22 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// all updates for the nav 
+ const navSec = document.getElementsByTagName('a');
+ navSec[0].textContent = siteContent["nav"]["nav-item-1"];
+ navSec[1].textContent = siteContent["nav"]["nav-item-2"];
+ navSec[2].textContent = siteContent["nav"]["nav-item-3"];
+ navSec[3].textContent = siteContent["nav"]["nav-item-4"];
+ navSec[4].textContent = siteContent["nav"]["nav-item-5"];
+ navSec[5].textContent = siteContent["nav"]["nav-item-6"];
+
+
 // update the img src for the header 
-let headerImg = document.getElementById("cta-img");
+const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute('src',siteContent["cta"]["img-src"]);
 //update the img src for the main-content
-let midPage = document.getElementById("middle-img");
+const midPage = document.getElementById("middle-img");
 midPage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
