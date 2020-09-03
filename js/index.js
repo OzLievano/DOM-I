@@ -73,6 +73,17 @@ header4[2].textContent = siteContent["main-content"]["services-h4"];
 header4[3].textContent = siteContent["main-content"]["product-h4"];
 header4[4].textContent = siteContent["main-content"]["vision-h4"];
 header4[5].textContent = siteContent["contact"]["contact-h4"];
+// add paragraph content
+const descriptions = document.getElementsByTagName("p");
+descriptions[0].textContent = siteContent["main-content"]["features-content"];
+descriptions[1].textContent = siteContent["main-content"]["about-content"];
+descriptions[2].textContent = siteContent["main-content"]["services-content"];
+descriptions[3].textContent = siteContent["main-content"]["product-content"];
+descriptions[4].textContent = siteContent["main-content"]["vision-content"];
+descriptions[5].textContent = siteContent["contact"]["address"];
+descriptions[6].textContent = siteContent["contact"]["phone"];
+descriptions[7].textContent = siteContent["contact"]["email"];
+descriptions[8].textContent = siteContent["footer"]["copyright"];
 
 
 
