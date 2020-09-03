@@ -50,7 +50,14 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
  navSec[4].textContent = siteContent["nav"]["nav-item-5"];
  navSec[5].textContent = siteContent["nav"]["nav-item-6"];
 
+// all updates for the header
 
+// update the h1 
+const title1 = document.querySelector("h1");
+title1.textContent = siteContent["cta"]["h1"];
+// update the button 
+const button1 = document.querySelector("button");
+button1.textContent = siteContent["cta"]['button'];
 // update the img src for the header 
 const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute('src',siteContent["cta"]["img-src"]);
